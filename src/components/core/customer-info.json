@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_core_customer_infos",
+  "info": {
+    "displayName": "Customer Info",
+    "icon": "paperPlane",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "address_line_1": {
+      "type": "string",
+      "required": true
+    },
+    "address_line_2": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

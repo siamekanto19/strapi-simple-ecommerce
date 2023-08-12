@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_core_cart_line_items",
+  "info": {
+    "displayName": "Cart Line Item",
+    "icon": "moon"
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "quantity": {
+      "type": "integer"
+    }
+  }
+}

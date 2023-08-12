@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customer_info": {
+      "displayName": "customer_info",
+      "type": "component",
+      "repeatable": false,
+      "component": "core.customer-info"
+    },
+    "line_items": {
+      "displayName": "Cart Line Item",
+      "type": "component",
+      "repeatable": true,
+      "component": "core.cart-line-item"
+    },
+    "total_price": {
+      "type": "decimal"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Processing",
+        "Shipped",
+        "Delivered"
+      ],
+      "required": true,
+      "default": "Processing"
+    }
+  }
+}
